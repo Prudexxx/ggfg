@@ -1,0 +1,20 @@
+.phone-icon {
+ display: none;
+  }
+  
+  .phone-icon img {
+    width: 75px; /* Размер иконки */
+    height: 75px; /* Размер иконки */
+  }
+
+  @media (max-width:768px){
+    .phone-icon {
+     background: none;
+        display: block;
+        position: fixed;
+        opacity: 0.6;
+        bottom: 0px; /* Расположение от нижней границы */
+        right: 0px;  /* Расположение от правой границы */
+        z-index: 1000; /* Обеспечить, что иконка будет поверх других элементов */
+      }
+  }

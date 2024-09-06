@@ -1,0 +1,28 @@
+.marquee {
+    overflow: hidden; /* Скрыть лишнее содержимое */
+    white-space: nowrap; /* Запретить перенос строки */
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); Тень для блока */
+    margin-bottom: 100px;
+
+    
+}
+
+.marquee-content {
+    display: inline-block; /* Для горизонтального выравнивания */
+    padding-left: 100%; /* Начальное смещение */
+    animation: marquee 40s linear infinite; /* Анимация бегущей строки */
+    font-size: 50px;
+    color: rgb(252, 95, 4);
+  
+
+}
+
+/* Анимация бегущей строки */
+@keyframes marquee {
+    0% {
+        transform: translateX(0); /* Начальная позиция */
+    }
+    100% {
+        transform: translateX(-100%); /* Конечная позиция */
+    }
+}

@@ -1,0 +1,32 @@
+.cabinet {
+   max-width:600px; /* Ширина комода */
+    margin: 0 auto;
+    border-radius: 10px; /* Закругление углов */
+    padding: 10px; /* Внутренние отступы */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Тень */
+}
+
+.drawer {
+    background-color: #0c9e4b97; /* Цвет ящиков */
+    border: 2px solid #d2691e; /* Цвет границы */
+    border-radius: 5px; /* Закругление углов ящиков */
+    margin-bottom: 10px; /* Отступ между ящиками */
+    cursor: pointer; /* Указатель при наведении */
+}
+
+.drawer-header {
+    padding: 15px; /* Внутренние отступы ящиков */
+    text-align: center; /* Центрирование текста */
+    font-weight: bold; /* Полужирный шрифт */
+    transition: background-color 0.3s; /* Плавный переход цвета */
+}
+
+.drawer-header:hover {
+    background-color: #1b9610; /* Цвет при наведении */
+}
+
+.drawer-content {
+    padding: 10px; /* Внутренние отступы содержимого */
+    text-align: center; /* Центрирование текста */
+    border-top: 1px solid #d2691e; /* Граница между заголовком и содержимым */
+}

@@ -1,0 +1,111 @@
+/* src/TelegramForm.css */
+.telegram-form-container {
+    max-width: 900px;
+    margin: 20px;
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.telegram-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 7px solid #ed8207;
+    max-width: 400px;
+    align-items: center;
+}
+
+button {
+    margin: 0 auto;
+    padding: 10px;
+    background-color:#51a74a;; /* Цвет кнопки */
+    color: white; /* Цвет текста кнопки */
+    border: none; /* Без границ */
+    border-radius: 5px; /* Закругление углов */
+    cursor: pointer; /* Указатель при наведении */
+}
+
+button.zakrytFormu:hover {
+    background-color: #51a74a;; /* Цвет при наведении */
+    background-color:  #1b9610; /* Цвет при наведении */
+}
+
+input, textarea {
+    padding: 10px;
+    border: 2px solid #34968b;; /* Цвет границы */
+    border-radius: 5px; /* Закругление углов */
+    width: 100%; /* Полная ширина */
+    box-sizing: border-box; /* Учет внутренних отступов и границ в размере */
+    max-width: 400px; /* Максимальная ширина поля */
+}
+
+input:focus, textarea:focus {
+    border-color: #51a74a;; /* Цвет границы при фокусе */
+}
+
+.zakaz{
+    color: #f8e005;
+    margin-bottom: 20px;
+    background-color: #34968b; 
+}
+.input{
+    
+}
+
+.pppp{
+    max-width: 30%;
+}
+
+label {
+    max-width: 400px;
+    font-size: 25px;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    margin: 10px 0; /* Отступ сверху и снизу */
+}
+
+input[type="checkbox"] {
+    width: 25%;
+    margin: 0 auto;
+    margin-right: 0px; /* Отступ для чекбокса */
+}
+
+.politikaConfidealnosti a{
+    color: #d9ddd8;
+    font-size: 10px;
+    
+}
+.politikaConfidealnosti{
+    color: #d9ddd8;
+    font-size: 10px;
+    
+}
+.zakrytFormu{
+    margin: 100px auto;
+    
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #fefe03;
+    animation-name: rotation1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    z-index: 1;
+  
+}
+
+@keyframes name {
+    0% {
+       
+        transform: scale(1);
+       
+    };
+    100%{
+        transform: scale(1.1);
+        
+    }
+};

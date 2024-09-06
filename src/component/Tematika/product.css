@@ -1,0 +1,39 @@
+.carousel-container {
+    max-width: 80%; /* Задаем максимальную ширину 100% */
+    overflow: hidden;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 2s ease-in-out;
+}
+
+.slide {
+    min-width: 100%; /* Каждый слайд занимает 100% ширины контейнера */
+    box-sizing: border-box;
+    display: flex; /* Для центрирования изображений */
+    justify-content: center; /* Центрирование изображений по горизонтали */
+    align-items: center; /* Центрирование изображений по вертикали */
+}
+
+.slide-image {
+    width: 100%; /* Ширина изображения 100% от контейнера */
+    height: auto; /* Соотношение сторон изображения */
+    max-height: 400px; /* Ограничиваем максимальную высоту */
+}
+
+
+/* Медиа-запросы для адаптивности */
+@media (max-width: 768px) {
+    .slide-image {
+        max-height: 300px; /* Уменьшаем максимальную высоту на мобильных устройствах */
+    }
+}
+
+@media (max-width: 480px) {
+    .slide-image {
+        max-height: 200px; /* Уменьшаем максимальную высоту на маленьких экранах */
+    }
+}
